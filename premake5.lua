@@ -24,6 +24,11 @@ project "GLFW"
 
     filter  "system:windows" 
         systemversion "latest"
+        defines
+        {
+            "CRT_SECURE_NO_WARNING",
+            "_GLFW_WIN32"
+        }
         files
         {
           "src/wgl_context.c", 
