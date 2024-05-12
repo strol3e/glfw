@@ -3,8 +3,8 @@ project "GLFW"
     language "C"
     staticruntime "on"
 
-    targetdir (vendorLibDir)
-    objdir (vendorObjDir)
+    targetdir (OutDirs["vendorLibDir"])
+    objdir (OutDirs["vendorObjDir"])
 
 
     
